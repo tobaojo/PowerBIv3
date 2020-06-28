@@ -99,6 +99,7 @@ z-index: 2;
   margin: 1rem;
   background: var(--main-color);
   width: 500px;
+  border-radius: 3px;
 }
 
 .lead-btn:hover{
@@ -109,9 +110,15 @@ z-index: 2;
   display: flex;
   padding: 1rem;
   margin: 1.5rem 0.5rem;
+  /* border-bottom: solid 0.1px #8c8c8c; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .left,
 .right{
   padding: 1rem;
+}
+
+.left{
+  border-right: solid 1px #8c8c8c;
 }
