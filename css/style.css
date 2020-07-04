@@ -27,6 +27,15 @@ a{
   color: #000000;
 }
 
+button{
+  height: 97px;
+  padding: 0 24px;
+}
+svg{
+  max-width: 100%;
+  fill: inherit;
+}
+
 .container{
   max-width: auto;
   /* padding: 1.5rem;
@@ -172,4 +181,18 @@ z-index: 2;
   margin-right: 8px;
   padding: 8px;
   line-height: 1.5;
+}
+.carosel-wrap{
+}
+
+.carosel{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  flex-flow: row;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
