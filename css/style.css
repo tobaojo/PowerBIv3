@@ -30,6 +30,12 @@ a{
 button{
   height: 97px;
   padding: 0 24px;
+  background-color: #ffffff;
+  border: none;
+}
+
+button:hover{
+  border-bottom: solid 2.5px #000;
 }
 svg{
   max-width: 100%;
@@ -181,6 +187,13 @@ z-index: 2;
   margin-right: 8px;
   padding: 8px;
   line-height: 1.5;
+}
+
+
+/* carosel */
+
+#section-2-heading{
+  margin: 1rem 2rem;
 }
 .carosel-wrap{
 }
