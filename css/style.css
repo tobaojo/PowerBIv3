@@ -196,6 +196,7 @@ z-index: 2;
   margin: 1rem 2rem;
 }
 .carosel-wrap{
+  overflow: hidden;
 }
 
 .carosel{
@@ -218,4 +219,28 @@ z-index: 2;
   align-items: center;
   justify-content: center;
   align-content: center;
+  transform-style: preserve-3d;
+}
+
+.carosel-images{
+top: 0;
+height: auto;
+width: 100%;
+margin: auto;
+padding: 1rem 4rem;
+z-index: 1;
+-webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity:0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+
+.carosel-images.opaque{
+  opacity:1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=1);
 }
