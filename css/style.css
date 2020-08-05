@@ -229,18 +229,21 @@ width: 100%;
 margin: auto;
 padding: 1rem 4rem;
 z-index: 1;
+display: none;
 -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-  opacity:0;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
 }
 
 
 .carosel-images.opaque{
+  display: block;
   opacity:1;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+
+    transition: 1s ease-out;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=1);
 }
