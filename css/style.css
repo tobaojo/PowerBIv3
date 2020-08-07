@@ -1,5 +1,5 @@
 :root{
---main-color:#e6cb45;
+--main-color:#fcc93d;
 --secondary-color: #000000;
 }
 /* core styles */
@@ -18,8 +18,8 @@ p{
 ul{
   display: flex;
   list-style: none;
-  margin: 0.2rem 0.8rem;
-  padding: 0.2rem 0.2rem;
+  margin: 0.2rem 0.4rem;
+  padding:0;
 }
 
 a{
@@ -53,11 +53,14 @@ svg{
 /* navbar */
 .nav-bar{
   display: flex;
+  padding: 0 7rem;
   justify-content: space-between;
-  margin-left: 10rem;
-  margin-right: 6rem;
   margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
+  position: sticky;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .nav-item,
@@ -197,6 +200,7 @@ z-index: 2;
 }
 .carosel-wrap{
   overflow: hidden;
+  width: 100%;
 }
 
 .carosel{
@@ -212,10 +216,8 @@ z-index: 2;
 }
 
 .carousel-img{
-  margin: 1rem;
-  padding: 1rem;
   max-width: 100%;
-  width: 100%;
+  width: 500vw;
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -227,7 +229,6 @@ top: 0;
 height: auto;
 width: 100%;
 margin: auto;
-padding: 1rem 4rem;
 z-index: 1;
 display: none;
 transition: ease-in;

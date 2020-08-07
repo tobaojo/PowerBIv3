@@ -7,12 +7,12 @@ const image4 = document.querySelector('#carosel-image-4');
 const image5 = document.querySelector('#carosel-image-5');
 const images = []
 
-var slideIndex = 0
+let slideIndex = 0
 changeimg()
 
 function changeimg(){
-  var i;
-  var x = document.getElementsByClassName('carosel-images');
+  let i;
+  const x = document.getElementsByClassName('carosel-images');
   for (i = 0; i < x.length; i++) {
     x[i].style.display = 'none'
   }
