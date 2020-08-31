@@ -252,3 +252,80 @@ align-self: center;
 .grey{
   background-color: #e3e3e3;
 }
+
+.carosel-wrap-2{
+  overflow: hidden;
+  width: 90%;
+}
+
+.carosel{
+  transform-style: preserve-3d;
+}
+
+.carosel-photo{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 4rem;
+  z-index:100;
+  transition: transform .5s, opacity .5s, z-index.5s;
+
+}
+
+.carosel-photo.initial,
+.carosel-photo.active{
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+.carosel-next,
+.carosel-prev{
+z-index: 800;
+}
+
+.carosel-photo.prev{
+    transform:  translateX(-100%);
+}
+.carosel-photo.next{
+  transform:  translateX(100%);
+}
+
+.carosel-prev,.carosel-next{
+  position: absolute;
+  top: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10001;
+  border-radius: black solid 1px;
+
+}
+.carosel-prev{
+  left: 0;
+}
+.carosel-next{
+  right: 0;
+}
+
+.carosel-prev::after,
+.carosel-next::after{
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carosel-next::after{
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
