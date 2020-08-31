@@ -24,3 +24,26 @@ function changeimg(){
   x[slideIndex-1].style.display= 'block';
   setTimeout(changeimg, 7000)
 }
+
+(function(d){
+  const itemClassName = 'carosel-photo',
+  items = d.getElementsByClassName(itemClassName),
+    totalItems = items.length,
+    slide = 0,
+    moving = true;
+
+    function setInitialClasses(){
+      // Targets the previous, current, and next items
+      // This assumes there are at least three items.
+      items[totalItems - 1].classList.add("prev");
+      items[0].classList.add("active");
+      items[1].classList.add("next");
+    }
+
+    function setEventListeners(){
+      var next = d.getElementsByClassName('carousel-next')[0],
+      prev = d.getElementsByClassName('carousel-prev')[0];
+      next.addEventListener('click', moveNext);
+      prev.addEventListener('click', movePrev);
+    }
+})(document)
